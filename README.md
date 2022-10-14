@@ -1,5 +1,6 @@
 # Linime
 A PyCairo + PyGObject based animation engine for linux
+NOTE: Windows support (probably using tkinter for the main canvas and window) will be added soon
 
 The engine takes in a .linime file, and compiles it to python, which uses the module functions for its animation.
 `NOTE: numpy is imported as np in linime, and math as math`
