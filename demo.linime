@@ -1,0 +1,30 @@
+#TO RUN, EXECUTE `python3 main.py demo.linime` IN THIS DIRECTORY
+
+#PROPERTIES
+new rect = RoundedRectangle
+{
+    height: 100
+    width: 200
+    x: 10
+    y: 10
+    opacity: 1
+}
+
+new text = Circle
+{
+    x: 150
+    y: 10
+    radius: 40
+    opacity: 0.01
+}
+
+#PROPERTIES 
+
+#DRAW
+draw :: text
+#DRAW
+
+#QUEUE
+rect :: x : 10 -> 100 + rect :: y : 10 -> 150
+wait :: 2
+text :: opacity : 0.01 -> 1
